@@ -27,6 +27,6 @@ app.get('/', function (req, res) {
     });
 })
 seedDB();
-app.listen(port || 3000, function () {
-    console.log('Example app listening on port 3000!')
+app.listen('port', process.env.PORT || 8080, function () {
+    console.log('Example app listening on port 8080!')
 })
