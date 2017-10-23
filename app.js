@@ -27,6 +27,6 @@ app.get('/', function (req, res) {
     });
 })
 seedDB();
-app.listen(process.env.PORT , process.envIP, function () {
+app.listen(process.env.PORT || 8080 , process.envIP, function () {
     console.log('Example app listening on port 8080!')
 })
