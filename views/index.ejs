@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+    <div class="container">
+        <% entries.forEach(function(entry){%>
+            <div class="entry">
+                <h2 class="title">
+                    <%= entry.title %>
+                </h2>
+                <hr>
+                <div class="article">
+                    <p>
+                        <%=entry.article%>
+                    </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+
+    <% include partials/footer %>
